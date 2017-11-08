@@ -1,16 +1,16 @@
 {
-  "name": "atmelavr",
-  "title": "Atmel AVR",
-  "description": "Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.",
-  "url": "http://www.atmel.com/products/microcontrollers/avr/default.aspx",
-  "homepage": "http://platformio.org/platforms/atmelavr",
+  "name": "osxcrossavr",
+  "title": "Latest AVR Toolchain",
+  "description": "Latest AVR toolchain brought to you by osx-cross to use the latest version of gcc, binutils and avrlibc.",
+  "url": "https://github.com/osx-cross/platform-osxcrossavr",
+  "homepage": "https://github.com/osx-cross/platform-osxcrossavr",
   "license": "Apache-2.0",
   "engines": {
     "platformio": "^3.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/platformio/platform-atmelavr.git"
+	"url": "https://github.com/osx-cross/platform-osxcrossavr.git"
   },
   "version": "1.8.1",
   "packageRepositories": [
@@ -29,11 +29,7 @@
     }
   },
   "packages": {
-    "toolchain-atmelavr": {
-      "type": "toolchain",
-      "version": "~1.40902.0"
-    },
-    "framework-arduinoavr": {
+      "framework-arduinoavr": {
       "type": "framework",
       "optional": true,
       "version": "~1.10620.2"
