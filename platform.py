@@ -15,7 +15,7 @@
 from platformio.managers.platform import PlatformBase
 
 
-class AtmelavrPlatform(PlatformBase):
+class OsxcrossavrPlatform(PlatformBase):
 
     def configure_default_packages(self, variables, targets):
         if variables.get("board"):
