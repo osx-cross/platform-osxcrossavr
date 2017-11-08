@@ -90,14 +90,14 @@ def BeforeUpload(target, source, env):  # pylint: disable=W0613,W0621
 env = DefaultEnvironment()
 
 env.Replace(
-    AR="avr-gcc-ar",
-    AS="avr-as",
-    CC="avr-gcc",
-    GDB="avr-gdb",
-    CXX="avr-g++",
-    OBJCOPY="avr-objcopy",
-    RANLIB="avr-gcc-ranlib",
-    SIZETOOL="avr-size",
+    AR="/usr/local/bin/avr-gcc-ar",
+    AS="/usr/local/bin/avr-as",
+    CC="/usr/local/bin/avr-gcc",
+    GDB="/usr/local/bin/avr-gdb",
+    CXX="/usr/local/bin/avr-g++",
+    OBJCOPY="/usr/local/bin/avr-objcopy",
+    RANLIB="/usr/local/bin/avr-gcc-ranlib",
+    SIZETOOL="/usr/local/bin/avr-size",
 
     ARFLAGS=["rc"],
 
@@ -121,7 +121,7 @@ env.Replace(
         "-fno-exceptions",
         "-fno-threadsafe-statics",
         "-fpermissive",
-        "-std=gnu++11"
+        "-std=gnu++14"
     ],
 
     CPPDEFINES=[("F_CPU", "$BOARD_F_CPU")],
